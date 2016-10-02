@@ -35,7 +35,7 @@ hr{
     margin-bottom:0px;
 }
 a:hover{
-    color:white;
+    color:darkblue;
     text-decoration:none;
 }
 .navbar-text{
@@ -78,6 +78,9 @@ a:hover{
     font-family: 'Voces', cursive;
     margin-top:5px;
     margin-bottom:5px;
+}
+.btn:hover .btn:active{
+    color:grey;
 }
 .form-group-sm
 {
