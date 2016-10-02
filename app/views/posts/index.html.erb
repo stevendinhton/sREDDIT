@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+    </head>
+    <body>
+        <%= render "navbar"%>
+        <div class="container">
+        <a href="/posts/new" class="btn">NEW POST</a>
+        <% @posts.each do |post| %>
+        <div class="panel panel-default">
+            <div class="panel-body">
+            <p class="post-link"><%= link_to post.title, post_path(:id => post.id)%></p>
+            <p class="comment">comments: <%= post.comments.count %></p>
+            <p class="date">posted: <%= post.created_at %></p>
+            </div>
+        </div>
+        <% end %>
+
+        
+        </div>
+        <%= render "footer"%>
+    </body>
+</html>

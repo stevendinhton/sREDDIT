@@ -1,0 +1,13 @@
+<%= render "navbar"%>
+<div class="container">
+<a href="/posts" class="btn"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;back</a>
+<%= form_for(@post, :html => {:class => "form-horizontal center"}) do |f| %>  
+    <div class="form-group-lg"> 
+        <h2>Title</h2>
+        <%= f.text_area :title, class: "form-control"%> 
+        <h2>Text</h2>
+        <%= f.text_area :description, class: "form-control"%> 
+        <%= f.submit "create new post", class: "btn" %> 
+    </div> 
+<% end %>
+</div>

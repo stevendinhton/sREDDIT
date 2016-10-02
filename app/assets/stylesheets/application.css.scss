@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+h1{
+    font-size: 50px;
+    color:#101010;
+    font-family: 'Voces', cursive;
+}
+h2{
+    font-family: 'Voces', cursive;
+    font-size: 30px;
+    margin:0px;
+}
+h3{
+    font-family: 'Voces', cursive;
+    font-size: 15px;
+    margin-bottom:5px;
+}
+hr{
+    margin-bottom:0px;
+}
+a:hover{
+    color:white;
+    text-decoration:none;
+}
+.navbar-text{
+    font-family: 'Voces', cursive;
+    font-size: 25px;
+    margin:5px;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+}
+.navbar-inverse .navbar-text{
+    color:white;
+}
+.panel{
+    margin-bottom:5px;
+    background-color:#F0F0F0;
+}
+.panel-body{
+    padding-bottom:10px;
+}
+.date{
+    color:grey;
+    font-size:10px;
+    margin-bottom:0px;
+}
+.comment{
+    font-size:10px;
+    margin-bottom:0px;
+}
+.container{
+    margin-top:70px;
+}
+.post-link{
+    font-size:20px;
+    font-family: 'Voces', cursive;
+}
+.btn{
+    background-color:black;
+    color: white;
+    font-family: 'Voces', cursive;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.form-group-sm
+{
+    resize:both;
+    width:300px;
+}
+.form-group-lg
+{
+    resize:none;
+}
+.logo{
+    color:white;
+}
+.footer{
+    color:grey;
+    font-size:14px;
+}
